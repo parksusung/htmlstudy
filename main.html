@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <form>
+            <ul>
+                <li>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruit" id="apple">사과</label>
+                    <label><input type="radio" name="fruit" id="jamong">자몽</label>
+                </li>    
+
+                <li>
+                    <div class="btn">Button</div>
+                </li>
+            </ul>
+         </form>
+
+         <div class="image">
+             <img class="image" src="image/0.jpg">
+         </div>
+
+<script>
+    $(document).ready(function(){
+
+
+});
+
+
+</script>
+
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        text-decoration:none;
+        color:black;
+        list-style: none;
+        border-collapse: none;
+    }
+.image{     
+            display: block;
+            max-width:250px;
+            max-height:500px;
+            position: absolute;
+        }
+li{
+    list-style: none;
+}
+.btn{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30PX;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*
+    1.div와 span 태그의 차이점 
+        div  : 세로로 나열 , 한줄전체 영역차지
+        span : 가로로 나열 , 글자만큼 영역차지
+    2.h1, li,ul태그 (제목, 목록태그)
+        <ul>
+            <li> </li>
+            list-style:none; 처리로 앞에 점 없앨수있음 (어차피 구글링하면다나오지만 적음)
+             
+        </ul>   
+    3.입력양식태그 form, input 
+        <form> input태그는 가로로 나열되서 목록태그로 세로로 구분지어준다.
+            <ul>
+                <li><input type="text"></li>   text박스         
+                <li><input type="password"></li>   text박스         
+                <li><input type="submit"></li> 데이터베이스에 내용전달 자바스크립트로 경고도 안날리고 걍 쏴버려서 안씀 
+                <li><input type="button"></li> 버튼 그러나 이거안씀 이유는 브라우저마다 모양이다름 ㅡㅡ; <button></button>도 안씀 같은이유 
+                div의 css를 조정해서 버튼으로 만들어줌 
+            </ul>
+         </form>
+    3.2 . input type에서의 radio, checkbox (label 태그로 감싸줘야함 )
+         radio는 1개만 선택가능
+         name=" "으로 같은 name중 1개 선택하게 구분시켜줄수있음
+         checkbox는 복수선택가능 
+         <form> input태그는 가로로 나열되서 목록태그로 세로로 구분지어준다.
+            <ul>
+                <li>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruit" id="apple">사과</label>
+                    <label><input type="radio" name="fruit" id="jamong">자몽</label>
+                </li>    
+                </ul>
+         </form>
+    4. a태그
+    <a href="www.naver.com">네이버링크로이동</a>
+    5. img태그
+    <img src="링크.확장자">
+
+    css 강의
+    1.margin,padding
+         padding 은 면적을 늘여줌 , margin은 서로간의 간격을 띄여줌 
+    div > span:first-child -> div안에있는 첫번째 span의 css만 변경
+    div > span:last-child -> div안에있는 마지막 span의 css만 변경
+
+    padding-top: 패딩 윗부분만 면적늘려줌 등등 
+    
+    2.position
+      1. absolute
+         html 문서기준으로 이동(독립된좌표)
+      2.relative
+        현재위치를 기준으로 이동시켜줌
+      3.fixed
+        브라우저를 기준으로 고정( ex) 마우스휠로 이동하면 고정된위치로 따라옴 
+ */
+</style>
+
+    </body>
+</html>
